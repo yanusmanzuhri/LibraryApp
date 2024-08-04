@@ -51,7 +51,11 @@ android {
 
 dependencies {
 
-    implementation 'androidx.appcompat:appcompat:1.6.1'
+    val appcompat_version = "1.7.0"
+
+    implementation("androidx.appcompat:appcompat:$appcompat_version")
+    // For loading and tinting drawables on older versions of the platform
+    implementation("androidx.appcompat:appcompat-resources:$appcompat_version")
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
     implementation(libs.androidx.activity.compose)
