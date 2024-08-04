@@ -1,4 +1,4 @@
-package com.example.libraryapp;
+package com.example.mylibrary;
 
 public class Teacher extends User {
     public Teacher(String name, String id) {

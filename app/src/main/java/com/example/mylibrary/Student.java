@@ -1,4 +1,4 @@
-package com.example.libraryapp;
+package com.example.mylibrary;
 
 public class Student extends User {
     public Student(String name, String id) {

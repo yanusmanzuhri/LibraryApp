@@ -1,4 +1,4 @@
-package com.example.libraryapp;
+package com.example.mylibrary;
 
 public class FictionBook extends Book {
     public FictionBook(String title, String author, String ISBN) {

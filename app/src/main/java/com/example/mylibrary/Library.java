@@ -1,4 +1,4 @@
-package com.example.libraryapp;
+package com.example.mylibrary;
 
 import java.util.ArrayList;
 import java.util.List;

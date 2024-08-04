@@ -1,4 +1,4 @@
-package com.example.libraryapp;
+package com.example.mylibrary;
 
 public class User {
     private String name;
