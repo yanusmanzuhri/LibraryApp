@@ -11,6 +11,7 @@ public class User {
         this.role = role;
     }
 
+    // Getters and setters for username, password, and role
     public String getUsername() {
         return username;
     }
