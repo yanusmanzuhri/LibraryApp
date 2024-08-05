@@ -1,9 +1,14 @@
 package com.example.mylibrary;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
+import android.widget.Button;
+import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
+import com.example.mylibrary.views.FictionBookView;
+import com.example.mylibrary.views.NonFictionBookView;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
@@ -11,16 +16,32 @@ import java.io.IOException;
 
 public class MainActivity extends AppCompatActivity {
 
+    private Button fictionButton;
+    private Button nonFictionButton;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        try {
-            readFile();
-        } catch (IOException e) {
-            Log.e("MainActivity", "Error reading file", e);
-        }
+        fictionButton = findViewById(R.id.fictionButton);
+        nonFictionButton = findViewById(R.id.nonFictionButton);
+
+        fictionButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, FictionBooksActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        nonFictionButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, NonFictionBooksActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 
     private void readFile() throws IOException {

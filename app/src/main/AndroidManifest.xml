@@ -33,6 +33,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".FictionBooksActivity"></activity>
+        <activity android:name=".NonFictionBooksActivity"></activity>
     </application>
 
 </manifest>

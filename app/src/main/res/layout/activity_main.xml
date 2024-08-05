@@ -6,9 +6,25 @@
     tools:context=".MainActivity">
 
     <!-- Add your UI components here -->
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Welcome to the Main Activity"
-        android:layout_centerInParent="true"/>
+
+
+    <Button
+        android:id="@+id/fictionButton"
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="95dp"
+        android:layout_marginEnd="3dp"
+        android:text="Fiction Books" />
+
+    <Button
+        android:id="@+id/nonFictionButton"
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="-5dp"
+        android:text="Non-Fiction Books" />
+
 </RelativeLayout>
