@@ -7,8 +7,8 @@ import android.widget.Button;
 import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
-import com.example.mylibrary.views.FictionBookView;
-import com.example.mylibrary.views.NonFictionBookView;
+//import com.example.mylibrary.views.FictionBookView;
+//import com.example.mylibrary.views.NonFictionBookView;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
